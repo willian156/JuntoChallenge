@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132 d17.12
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{06A03EB1-88AA-4137-B740-26B05DDA7C00}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuntoChallenge.API", "JuntoChallenge.API\JuntoChallenge.API.csproj", "{EE0EB993-1075-40B4-ACE8-328D08BADB76}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2C33520F-0EF0-4EA7-B0EE-9C3AEFF533EE} = {2C33520F-0EF0-4EA7-B0EE-9C3AEFF533EE}
+		{8D482C8D-CC33-48AB-B2AE-BDE01BC4596C} = {8D482C8D-CC33-48AB-B2AE-BDE01BC4596C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuntoChallenge.Application", "JuntoChallenge.Application\JuntoChallenge.Application.csproj", "{8D482C8D-CC33-48AB-B2AE-BDE01BC4596C}"
 EndProject

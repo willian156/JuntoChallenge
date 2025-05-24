@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace JuntoChallenge.Domain.Entities
 {
-    public class User
+    public class Log
     {
         public int Id { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Email { get; set; }
-        public bool IsDeleted { get; set; } = false;
+        public DateTime Timestamp { get; set; }
+        public string Level { get; set; }
+        public string Message { get; set; }
+        public string Exception { get; set; }
     }
 }
