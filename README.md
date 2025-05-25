@@ -21,8 +21,8 @@ O objetivo é construir uma aplicação back-end robusta para gerenciamento de u
 ## ⚙️ Requisitos para rodar o projeto
 
 - [.NET SDK 8.0+](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
-- [Docker](https://www.docker.com/) (recomendado para subir ambiente com banco de dados)
-- SQL Server local ou containerizado
+- [Docker](https://www.docker.com/) (recomendado para subir ambiente)
+- SQL Server
 - (Opcional) Visual Studio / VS Code
 
 ---
