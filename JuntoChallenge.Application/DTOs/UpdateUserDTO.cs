@@ -13,6 +13,7 @@ namespace JuntoChallenge.Application.DTOs
         public string Username { get; set; }
         public string Email { get; set; }
 
+        public UpdateUserDTO() { }
         public UpdateUserDTO(User user)
         {
             Username = user.Username;

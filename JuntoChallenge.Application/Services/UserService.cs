@@ -31,6 +31,7 @@ namespace JuntoChallenge.Application.Services
             var pagedList = query
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)
+                .Where(usr => !usr.IsDeleted)
                 .Select(usr => new UserDTO(usr))
                 .ToList();
 
@@ -39,15 +40,15 @@ namespace JuntoChallenge.Application.Services
 
         public UserDTO GetUser(int id)
         {
-            var usr = _context.Users.Select(usr => new UserDTO(usr)).FirstOrDefault();
-            return usr;
+            var user = _context.Users.Where(usr => usr.Id == id && usr.IsDeleted == false).Select(usr => new UserDTO(usr)).FirstOrDefault();
+            return user;
         }
 
         public async Task<UserDTO> UpdateUser(int id, UpdateUserDTO userDTO)
         {
             try
             {
-                var oldUser = await _context.Users.FindAsync(id);
+                var oldUser = await _context.Users.Where(usr => usr.Id == id && usr.IsDeleted == false).FirstOrDefaultAsync();
 
                 if (oldUser == null) 
                 {
