@@ -81,7 +81,7 @@ dotnet ef database update --project ./JuntoChallenge.Infrastructure/JuntoChallen
 
 ### 📝 Observações
 Deixei os arquivos .env para exemplificar de como ele está arquivado no sistema e, também, para a análise das chaves contidas no documento, 
-mas o arquivo pode ser facilmente eliminado após a inclusao do nome do mesmo no .gitignore.
+mas o arquivo pode ser facilmente eliminado após a inclusão do nome do mesmo no .gitignore.
 Também deixei os endpoints de criar um usuário (`POST /api/Users`) e login (`POST /api/Login`) sem autenticação, pois foi o método que escolhi para que o usuário possa obter a chave jwt facilmente.
 
 ---
